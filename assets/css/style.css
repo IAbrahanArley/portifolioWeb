@@ -93,7 +93,6 @@ a {
     right: 0;
     z-index: 1;
     width: 100%;
-    /* height: 9vh; */
     border-bottom: 1px solid var(--light-gray-color);
 }
 
@@ -206,17 +205,55 @@ a {
 .bareffect {
     animation: grow 2.5s ease-in-out forwards;
 }
+.bareffect-back{
+    animation: slap 2.5s ease-in-out forwards;
+}
+.bareffect-banco{
+    animation: grow 2.5s ease-in-out forwards;
+}
+.bareffect-devops{
+    animation: vops 2.5s ease-in-out forwards;
+}
+.bareffect-front{
+    animation: ment 2.5s ease-in-out forwards;
+}
+
 
 @keyframes grow {
     0% {
         width: 0;
     }
     100% {
-        width: 50%;
+        width: 30%;
+    }
+}
+@keyframes slap {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes vops {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes ment {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
     }
 }
 .col-content{
-    justify-content: 0center; 
+    justify-content: center; 
     text-align: left; 
     padding-top: 10%;
 }
@@ -230,7 +267,7 @@ a {
     z-index: 99;
     width: 50px;
     height: 50px;
-    background-image: url('/assets/img/square-alt-arrow-up-svgrepo-com.svg'); 
+    background-image: url('../img/square-alt-arrow-up-svgrepo-com.svg'); 
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -325,3 +362,43 @@ a {
 	}
 }
 
+
+.skills-content h2{
+    color: #000000;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+} 
+
+.backend-content{
+    margin-top: 3%;
+}
+.backend-content h2{
+    padding-top: 3%;
+    opacity: 0.5;
+}
+
+.frontend-content{
+    margin-top: 3%;
+}
+
+.banco-content{
+    margin-top: 3%;
+}
+
+.frontend-content h2,
+.banco-content h2, 
+.devops-content h2{
+    opacity: 0.5;
+}
+
+.devops-content{
+    margin-top: 3%;
+}
+
+.frontend-content:hover h2,
+.backend-content:hover h2,
+.banco-content:hover h2, 
+.devops-content:hover h2{
+    opacity: 0.5;
+    color: #0faac5;
+}
