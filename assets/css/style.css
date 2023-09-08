@@ -3,7 +3,7 @@
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
     --gap: 3rem;
-    --secondary-color: rgb(10, 95, 165);
+    --secondary-color: rgb(255, 196, 0);
 }
 
 * {
@@ -65,8 +65,9 @@ a {
 }
 
 .main-bg {
-    background-image: url("../img/pattern-randomized.svg");
+    
     background-size: cover;
+    background-color: #0077b5;
     background-position: center center;
     color: var(--white-color);
 }
@@ -86,7 +87,7 @@ a {
 }
 
 .menu {
-    background: var(--white-color);
+    background: #0077b5;
     position: fixed;
     top: 0;
     left: 0;
@@ -125,7 +126,10 @@ a {
     color: var(--primary-color);
     position: relative;
 }
-
+.test a:hover{
+    color: var(--secondary-color);
+    transition: all 0.5s ease;
+}
 .menu ul li a::after {
     content: '';
     position: absolute;
@@ -140,10 +144,12 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+    transition: all 0.5s ease;
+    color: rgb(255, 196, 0)
 }
 
 .menu-spacing {
-    height: 64px;
+    height: 78px;
 }
 
 .logoname {    
@@ -154,13 +160,11 @@ a {
     color: #000000;
 }
 
-
 .logoname:hover{
-    color: #0faac5;
+    color: var(--secondary-color);
     transform: scale(1.1);
+    transition: all 0.5s ease;
 }
-
-
 
 .intro-content {
     position: relative;
@@ -198,9 +202,9 @@ a {
     height: auto;
 }
 
-.opacity a {
+/* .opacity a {
     opacity: 0.5;
-}
+} */
 
 .bareffect {
     animation: grow 2.5s ease-in-out forwards;
@@ -340,8 +344,8 @@ a {
 	outline-color: #000000;
 }
 .icon-linkedin:hover {
-	background-color: #0077b5;
-	outline-color: #0077b5;
+	background-color: #0210d1;
+	outline-color: #0210d1;
 }
 .icon-gmail:hover {
 	background-color: #e0140d;
@@ -365,40 +369,108 @@ a {
 
 .skills-content h2{
     color: #000000;
-    font-family: 'Montserrat';
+    font-family: '';
     font-size: 2rem;
 } 
+.skills-title{
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;;
+}
+.skills-title h1{
+    color: #000000;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+.skills-img {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: start;
+    filter: grayscale(0);
+    
+}
+.skills-img img{
+    padding-bottom: 2%;
+    padding-right: 1%;
+    width: 6%;
+    height: 6vh;
+    
+}
 
 .backend-content{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .backend-content h2{
-    padding-top: 3%;
-    opacity: 0.5;
+    padding-top: 0.5%;
+    
 }
 
 .frontend-content{
-    margin-top: 3%;
+    margin-top: 5%;
+    
 }
 
+.frontend-content h2{
+    padding-top: 0.5%;
+    
+}
 .banco-content{
-    margin-top: 3%;
+    margin-top: 5%;
 }
-
-.frontend-content h2,
-.banco-content h2, 
-.devops-content h2{
-    opacity: 0.5;
+.banco-content h2{
+    padding-top: 0.5%;
+    
 }
 
 .devops-content{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
-.frontend-content:hover h2,
-.backend-content:hover h2,
-.banco-content:hover h2, 
-.devops-content:hover h2{
-    opacity: 0.5;
-    color: #0faac5;
+.devops-content h2{
+    padding-top: 0.5%;
+    
 }
+
+.block{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    width: 85%;
+    height: 28vh;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    border: 1px ;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    box-shadow: 10px 20px 40px #b9b7b7;
+}
+.block img {
+    width: 40%;
+    border-radius: 5px;
+    padding-top: 10%;
+    transition: all 0.6s ease;
+    filter: grayscale(1);
+    
+}
+.block:hover{
+    box-shadow: 5px 7px 16px var(--secondary-color);
+}
+
+.block:hover img{
+    filter: grayscale(0);
+}
+.block h3{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.block:hover h3{
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
