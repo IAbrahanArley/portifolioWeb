@@ -439,6 +439,7 @@ a {
     color: #000000;
     justify-content: center;
     align-items: baseline;
+    font-size: 2.5rem;
 
 }
 
@@ -465,40 +466,20 @@ a {
     letter-spacing: 1px;
 }
 
-.backend-content {
-    margin-top: 5%;
-}
-
-.backend-content h2 {
-    padding-top: 0.5%;
-
-}
-
-.frontend-content {
-    margin-top: 5%;
-
-}
-
-.frontend-content h2 {
-    padding-top: 0.5%;
-
-}
-
+.backend-content,
+.frontend-content,
+.devops-content,
 .banco-content {
     margin-top: 5%;
 }
 
-.banco-content h2 {
+.backend-content h2,
+.frontend-content h2,
+.banco-content h2,
+.devops-content h2
+{
     padding-top: 0.5%;
-
-}
-
-.devops-content {
-    margin-top: 5%;
-}
-
-.devops-content h2 {
-    padding-top: 0.5%;
+    font-size: 1.8rem;
 
 }
 
@@ -748,4 +729,10 @@ a {
 
 .card-button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 990px){
+    .col-content .row{
+        grid-template-columns: 1fr;
+    }
 }
