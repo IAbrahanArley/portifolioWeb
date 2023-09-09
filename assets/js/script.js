@@ -69,6 +69,7 @@ window.addEventListener('scroll', () => {
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
+const card = document.querySelectorAll("card")
 let current = 0;
 let prev = 5;
 let next = 1;
@@ -85,6 +86,7 @@ const gotoNum = number => {
 
     for(let i = 0; i < slides.length; i++){
         slides[i].classList.remove("active");
+        slides[i].classList.remove("card");
         slides[i].classList.remove("prev");
         slides[i].classList.remove("next");
     }
@@ -95,6 +97,7 @@ const gotoNum = number => {
         prev = 5;
     }
     slides[current].classList.add("active");
+    slides[current].classList.add("card")
     slides[prev].classList.add("prev");
     slides[next].classList.add("next");
 }
