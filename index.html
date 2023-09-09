@@ -10,10 +10,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Permanent+Marker&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="main-bg">
@@ -34,10 +32,10 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item opacity">
-                        <a class="nav-link" href="#projetos">Projetos</a>
+                        <a class="nav-link" href="#projetos">Projects</a>
                     </li>
                     <li class="nav-item opacity">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,8 +47,17 @@
             <div class="row col-content">
                 <div class="col-6">
                     <div class="intro-text-content">
-                        <h2>Olá, meu nome é Abrahan Arley</h2>
-                        
+                        <h2>Hello, I am Abrahan Arley</h2>
+                        <div id="texto" class="auto-text"></div>
+                        <span>I'm an undergraduate student at Uniesp</span>
+                        <div class="btn-content">
+                            <button type="button" href="" class="btn btn-light"
+                                style="height: 5vh; width: 20%; font-family: Josefin Sans, sans-serif; font-size: 1.3rem;">Hire
+                                me</button>
+                            <button type="button" class="btn btn-dark"
+                                style="height: 5vh; width: 20%; font-family: Josefin Sans, sans-serif; font-size: 1.3rem; margin-left: 2%;">My
+                                Resume</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6" style="padding-top: 5%;">
@@ -60,7 +67,8 @@
                     </div>
                 </div>
             </div>
-            <div id="texto" style=" display: flex; height: 5vh; width: 100%; font-size: 30px; color: rgb(255, 196, 0);"></div>
+
+        </div>
         </div>
         <div class="icons" style="padding-top: 5%;">
             <a href="https://www.instagram.com/abrahanarley/" class="icon icon-instagram">
@@ -79,16 +87,16 @@
     </section>
     <section id="skills" class="white-bg section">
         <div class="menu-spacing"></div>
-        
+
         <div class="container justify-content-end">
             <div class="skills-title">
-                <h1>Habilidades</h1>
+                <h1>Skills</h1>
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="main-content second-text">
-                            
-                        <div class="skills-content" style="margin-top: 10%;">  
+
+                        <div class="skills-content" style="margin-top: 10%;">
                             <div class="backend-content">
                                 <div class="skills-img">
                                     <img src="assets/img/swagger-svgrepo-com.svg" alt="">
@@ -124,7 +132,6 @@
                                     <img src="assets/img/dev-ops-solid-svgrepo-com.svg" alt="">
                                     <h2>Devops</h2>
                                 </div>
-                                
                                 <div class="progress" role="progressbar" aria-label="Warning Example high"
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
                                     <div class="progress-bar bg-warning bareffect-devops"></div>
@@ -152,7 +159,8 @@
                                 <div class="block">
                                     <div class="container text-center">
                                         <div class="row row-cols-1">
-                                            <div class="col"><img src="assets/img/postgresql-logo-svgrepo-com.svg" alt=""></div>
+                                            <div class="col"><img src="assets/img/postgresql-logo-svgrepo-com.svg"
+                                                    alt=""></div>
                                             <div class="col">
                                                 <h3>Postgree</h3>
                                             </div>
@@ -164,7 +172,8 @@
                                 <div class="block">
                                     <div class="container text-center">
                                         <div class="row row-cols-1">
-                                            <div class="col"><img src="assets/img/spring-icon-svgrepo-com.svg" alt=""></div>
+                                            <div class="col"><img src="assets/img/spring-icon-svgrepo-com.svg" alt="">
+                                            </div>
                                             <div class="col">
                                                 <h3>Spring</h3>
                                             </div>
@@ -176,7 +185,8 @@
                                 <div class="block">
                                     <div class="container text-center">
                                         <div class="row row-cols-1">
-                                            <div class="col"><img src="assets/img/javascript-svgrepo-com.svg" alt=""></div>
+                                            <div class="col"><img src="assets/img/javascript-svgrepo-com.svg" alt="">
+                                            </div>
                                             <div class="col">
                                                 <h3>Javascript</h3>
                                             </div>
@@ -186,14 +196,44 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="intro-img">
-                        <img src="assets/img/undraw_static_assets_rpm6.svg" alt="">
-                    </div> -->
                 </div>
             </div>
     </section>
     <section id="projetos" class="intro main-bg section">
+        <div class="menu-spacing"></div>
 
+        <div class="container" style="max-height: 100vh;">
+            <div class="projects-title">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="items">
+                <div class="item active">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="item next">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="item prev">
+                    <img src="assets/img/27277.jpg" alt="">
+                </div>
+                <div class="button-container">
+                    <div class="button"><i class="fas fa-angle-left"></i></div>
+                    <div class="button"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+    </section>
+    <section id="contact" class="intro white-bg section">
     </section>
     <button id="btnScrollToTop" class="scroll-to-top"></button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
