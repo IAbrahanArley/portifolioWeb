@@ -1,3 +1,4 @@
+/* alert("O site ainda esta em desenvolvimento, peço perdao pelos transtornos!") */
 const btnScrollToTop = document.getElementById("btnScrollToTop");
 
 window.addEventListener("scroll", () => {

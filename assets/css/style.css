@@ -329,7 +329,7 @@ a {
 }
 
 .scroll-to-top:hover {
-    background-color: #0faac5;
+    
     transform: scale(1.1);
 }
 
@@ -476,8 +476,7 @@ a {
 .backend-content h2,
 .frontend-content h2,
 .banco-content h2,
-.devops-content h2
-{
+.devops-content h2 {
     padding-top: 0.5%;
     font-size: 1.8rem;
 
@@ -572,7 +571,7 @@ a {
 .item.active:hover {
     height: 50vh;
     transition: all 700ms ease;
-    
+
 }
 
 .item.prev {
@@ -695,7 +694,7 @@ a {
 }
 
 
-.card-paragraph  {
+.card-paragraph {
     font-size: 14px;
     margin-bottom: 10px;
     font-family: Josefin Sans, sans-serif;
@@ -731,8 +730,28 @@ a {
     background-color: #0056b3;
 }
 
-@media (max-width: 990px){
-    .col-content .row{
-        grid-template-columns: 1fr;
-    }
+.form-container {
+    min-height: 100%;
+}
+
+.footer-container {
+    background-color: var(--secondary-color);
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.footer-content{
+    color: #000000;
+    text-align: center;
+}
+
+.talk-container {
+    color: var(--primary-color);
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
