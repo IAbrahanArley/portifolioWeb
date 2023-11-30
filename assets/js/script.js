@@ -1,5 +1,20 @@
-/* alert("O site ainda esta em desenvolvimento, peço perdao pelos transtornos!") */
 const btnScrollToTop = document.getElementById("btnScrollToTop");
+const whatsappButton = document.querySelector(".whatsapp-button");
+
+window.addEventListener("scroll", () => {
+    
+    if (window.scrollY > 300) {
+        btnScrollToTop.style.display = "block";
+
+        whatsappButton.style.bottom = "65px"; 
+    } else {
+        btnScrollToTop.style.display = "none";
+
+        whatsappButton.style.bottom = "15px"; 
+    }
+});
+/* alert("O site ainda esta em desenvolvimento, peço perdão pelos transtornos!") 
+ */
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {

@@ -309,6 +309,22 @@ a {
     text-align: left;
     padding-top: 10%;
 }
+.whatsapp-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/whatsapp-svgrepo-com.svg'); /* Substitua pelo link da sua imagem */
+    background-color: transparent; /* Cor de fundo do botão do WhatsApp */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 20%; /* Ajustado para um círculo perfeito */
+    cursor: pointer;
+}
 
 /* Estilos para o botão de voltar ao topo */
 .scroll-to-top {
@@ -446,16 +462,13 @@ a {
 
 .skills-img {
     display: flex;
-    align-items: flex-start;
-    align-content: center;
-    justify-content: start;
-    filter: grayscale(0);
-
+    align-items: center;
 }
 
 .skills-img img {
-    padding-bottom: 2%;
-    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
     width: 6%;
     height: 6vh;
 
@@ -464,7 +477,6 @@ a {
 .skills-img h2 {
     font-family: Josefin Sans sans-serif;
     font-weight: 500;
-    letter-spacing: 1px;
 }
 
 .backend-content,
