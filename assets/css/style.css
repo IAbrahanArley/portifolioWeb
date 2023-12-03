@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 html {
@@ -309,6 +309,7 @@ a {
     text-align: left;
     padding-top: 10%;
 }
+
 .whatsapp-button {
     position: fixed;
     bottom: 15px;
@@ -316,13 +317,13 @@ a {
     z-index: 99;
     width: 50px;
     height: 50px;
-    background-image: url('../img/whatsapp-svgrepo-com.svg'); /* Substitua pelo link da sua imagem */
-    background-color: transparent; /* Cor de fundo do botão do WhatsApp */
+    background-image: url('../img/whatsapp-svgrepo-com.svg');
+    background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    border-radius: 20%; /* Ajustado para um círculo perfeito */
+    border-radius: 20%;
     cursor: pointer;
 }
 
@@ -971,5 +972,81 @@ a {
             left: calc(50% + 420px);
             opacity: 0;
         }
+    }
+}
+
+/* Carrosel Repositorios */
+
+
+.section-git {
+    padding-top: 10%;
+    position: relative;
+    height: 100%;
+}
+
+
+.swiper {
+    width: 90%;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-color: transparent;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #ffffff;
+}
+
+.gitcard-content h1,
+h3,
+span,
+a {
+    color: #ffffff;
+
+}
+
+.gitcard-content h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+
+}
+
+.gitcard-content span {
+    font-size: 1.3rem;
+    text-align: left;
+    justify-content: baseline;
+    display: flex;
+
+}
+
+.gitcard-content h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+
+}
+
+.gitcard-content button {
+    margin-top: 70%;
+}
+
+.gitcard-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (width < 650px) {
+    .gitcard-content button {
+        margin-right: 10%;
+        margin-top: 130%;
     }
 }

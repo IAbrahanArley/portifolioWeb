@@ -2,19 +2,19 @@ const btnScrollToTop = document.getElementById("btnScrollToTop");
 const whatsappButton = document.querySelector(".whatsapp-button");
 
 window.addEventListener("scroll", () => {
-    
+
     if (window.scrollY > 300) {
         btnScrollToTop.style.display = "block";
 
-        whatsappButton.style.bottom = "65px"; 
+        whatsappButton.style.bottom = "65px";
     } else {
         btnScrollToTop.style.display = "none";
 
-        whatsappButton.style.bottom = "15px"; 
+        whatsappButton.style.bottom = "15px";
     }
 });
-/* alert("O site ainda esta em desenvolvimento, peço perdão pelos transtornos!") 
- */
+//alert("O site ainda está em desenvolvimento, peço perdão pelos transtornos!") 
+ 
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -94,3 +94,91 @@ function activate(e) {
 }
 
 document.addEventListener('click', activate, false);
+
+// consumindo api do git hub
+
+const createSlide = () => {
+    return $('<div>').addClass('swiper-slide gitcard-content').html()
+}
+const renderRows = dadosGit => {
+    const slides = dadosGit.map(dadoGit => {
+        const description = dadoGit.description ? `<span>${dadoGit.description}</span>` : '';
+        const language = dadoGit.language ? `<h3>${dadoGit.language}</h3>` : '';
+        const slideContent = `
+            <div class="swiper-slide gitcard-content">
+                <div class="container text-center">
+                    <div class="row row-cols-2">
+                        <div class="col-8">
+                            <h1>${dadoGit.name}</h1>
+                        </div>
+                        <div class="col-4">
+                            ${language}
+                        </div>
+                        <div class="col-10">
+                            
+                            ${description}
+                            
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-light">
+                                <a href="${dadoGit.svn_url}" >More</a>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        return slideContent;
+    });
+
+    $('#my-slides').append(slides);
+    iniciarSwiper();
+};
+
+const iniciarSwiper = () => {
+    var swiper = new Swiper(".mySwiper", {
+        autoplay: true,
+        enable: true,
+        loop: true,
+        speed: 3000,
+        breakpoints: {
+
+            1000: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                },
+            },
+            650:{
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                },
+            },
+            0: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 2,
+                },
+            },
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+};
+
+
+const getCadastros = () => {
+    $.ajax({
+        url: 'https://api.github.com/users/iabrahanarley/repos',
+        success: dadosGit => {
+            console.log(dadosGit);
+            renderRows(dadosGit);
+        }
+    });
+};
+getCadastros();
